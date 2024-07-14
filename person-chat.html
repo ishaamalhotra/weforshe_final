@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="person-chat.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="header">
+            <div class="back-arrow">
+                <a href="index.html"><span class="material-symbols-outlined back-icon">keyboard_backspace</span></a>
+            </div>
+
+            <div class="title">Nancy Ahuja</div>
+
+            <div class="add"><a>Add New Friend</a></div>
+        </header>
+
+
+
+
+
+        <div class="texting">
+
+            <div class="game-win-coin">
+                <div class="game-win-img">
+                    <img src="images/coin.png" alt="error">
+                </div>
+                <div class="game-win des">You earned 5 coins for playing TicTacToe!!</div>
+            </div>
+
+            <div class="other-side">               
+
+                <div class="board">
+                    <div class="collage">
+                        <img src="images/grid.png" alt="error">
+                    </div>
+                    <div class="board-des">Some daily wears to wear after office..!!</div>
+                </div>
+                <div class="other-text">Hey! Take a look at my collection of daily wears.</div>
+            </div>
+
+            <div class="me-side">I loved your collection!</div>
+        </div>
+
+
+
+
+
+
+		<div class="modal" id="modal">
+
+			<div class="attach box">
+                <div class="symbol">
+                    <span class="material-symbols-outlined">attachment</span>
+                </div>
+                <div class="text">Attachments</div>
+            </div>
+            
+            <a href="game.html"><div class="games box">
+                <div class="symbol">
+                    <span class="material-symbols-outlined">sports_esports</span>
+                </div>
+                <div class="text">Earn Coins</div>
+            </div></a>
+
+            <div class="gif box">
+                <div class="symbol">
+                    <span class="material-symbols-outlined">gif_box</span>
+                </div>
+                <div class="text">Stickers</div>
+            </div>
+
+			
+
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="plus">
+
+
+                
+                <button data-modal-target="#modal" class="xplore-button">
+                    <span class="material-symbols-outlined">add</span>
+                </button>
+
+
+            </div>
+            <div class="chat"><input type="text"></div>
+            <div class="send">
+                <span class="material-symbols-outlined">send</span>
+            </div>
+        </footer>
+
+        <div id="overlay"></div>
+    </div>
+    
+
+    <script defer src="plusButton.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.container-out{
+    background-color:white;
+    width: 54vmin;
+    height: 96vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left:50%;
+    /* padding: 5px; */
+    margin: auto;
+    /* display: flex;
+    flex-direction: column; */   
+}
+
+
+
+
+/* header */
+
+.header {
+    display: flex;
+    
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    height:5%;
+    position: relative;
+}
+.back-icon{
+    padding-right:3px;
+}
+.back-icon:hover{
+    color:#FF406E;
+}
+.game-name{
+    margin-left:5px;
+}
+
+
+
+
+/* game part  */
+
+.gamecontainer{
+    width:70%;
+    height:60%;
+    padding:25px;
+    border:solid 2px #FF406E;
+    border-radius: 25px;
+    background-color:#ffecec;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left:50%;
+}
+.container{
+    height:80%;
+    display: grid;
+    grid-template-rows: repeat(3, 4vw);
+    grid-template-columns: repeat(3, 4vw); 
+}
+.box{
+    border: 2px solid black;
+    /* font-size: 6vw; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.box:hover{
+    background-color: rgb(221, 196, 242);
+}
+
+.bt{
+    border-top: 0;
+}
+.bl{
+    border-left: 0;
+}
+.br{
+    border-right:0 ;
+}
+.bb{
+    border-bottom: 0;
+}
+#reset{
+    height: 30px;
+    width: 60px;
+    border:none;
+    color: white;
+    background-color: #FF406E;
+}
+.gameinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    background-color: #FF406E;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.footer-symbol img {
+    height: 30px; /* Adjust this value as needed */
+    width: auto;
+}
+
+
+
+.footer-text{
+    font-size: 20px;
+    font-weight: 100;
+}

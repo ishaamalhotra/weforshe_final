@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="new-collect.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="header">
+            <div class="back-arrow">
+                <a href="collects.html"><span class="material-symbols-outlined back-icon">keyboard_backspace</span></a>
+            </div>
+
+            <div class="title">Create a New Collection</div>
+
+        </header>
+
+        <div class="form">
+            <div class="collection-name name">
+                Collection Name:
+                <br>
+                <input type="text" placeholder="Enter Collection Name">
+            </div>
+
+            <div class="description name">
+                Description:
+                <br>
+                <input type="text" placeholder="Enter description">
+            </div>
+
+            <div class="category name">
+                <form class="category-form">
+                    <label for="choices">Choose a category:</label>
+                    <br>
+                    <select id="choices" name="choices">
+                        <option value="" selected disabled>Select a category</option>
+                        <option value="option2">Daily Wear</option>
+                        <option value="option3">Formals</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="choose name">
+                Choose from Wishlist
+                <span class="material-symbols-outlined">add</span>
+            </div>
+
+        </div>
+
+        <div class="create-button">
+            <button>Create</button>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
